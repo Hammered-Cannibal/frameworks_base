@@ -3840,6 +3840,19 @@ public final class Settings {
         /**
          * Whether the notification LED should repeatedly flash when a notification is
          * pending. The value is boolean (1 or 0).
+
+        /**
+         * Change OmniJaws icon pack
+         *
+         * @hide
+         */
+        public static final String OMNIJAWS_WEATHER_ICON_PACK = "omnijaws_weather_icon_pack";
+
+        /** @hide */
+        private static final Validator OMNIJAWS_WEATHER_ICON_PACK_VALIDATOR =
+                ANY_STRING_VALIDATOR;
+
+        /**
          * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE = "notification_light_pulse";
@@ -4171,7 +4184,9 @@ public final class Settings {
             SHOW_BATTERY_PERCENT,
             NOTIFICATION_VIBRATION_INTENSITY,
             HAPTIC_FEEDBACK_INTENSITY,
-            DISPLAY_COLOR_MODE
+
+            DISPLAY_COLOR_MODE,
+            OMNIJAWS_WEATHER_ICON_PACK
         };
 
         /**
@@ -4286,6 +4301,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(EGG_MODE);
             PRIVATE_SETTINGS.add(SHOW_BATTERY_PERCENT);
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
+            PRIVATE_SETTINGS.add(OMNIJAWS_WEATHER_ICON_PACK);
         }
 
         /**
@@ -4374,6 +4390,7 @@ public final class Settings {
             VALIDATORS.put(WIFI_STATIC_DNS1, WIFI_STATIC_DNS1_VALIDATOR);
             VALIDATORS.put(WIFI_STATIC_DNS2, WIFI_STATIC_DNS2_VALIDATOR);
             VALIDATORS.put(SHOW_BATTERY_PERCENT, SHOW_BATTERY_PERCENT_VALIDATOR);
+            VALIDATORS.put(OMNIJAWS_WEATHER_ICON_PACK, OMNIJAWS_WEATHER_ICON_PACK_VALIDATOR);
         }
 
         /**
