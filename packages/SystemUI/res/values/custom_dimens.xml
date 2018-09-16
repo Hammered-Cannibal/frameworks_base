@@ -19,6 +19,6 @@
 <resources>
 
 
-<dimen name="current_weather_image_size">42dp</dimen>
+<dimen name="current_weather_image_size">16dp</dimen>
 
 </resources>
